@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DEMO_WPF.NET8.Template
+namespace DEMO_WPF.NET8.Views
 {
     /// <summary>
-    /// Логика взаимодействия для ViewTemplate.xaml
+    /// Логика взаимодействия для WorkerPage.xaml
     /// </summary>
-    public partial class ViewTemplate : Window
+    public partial class WorkerPage : Page
     {
-        public ViewTemplate()
+        public WorkerPage()
         {
             InitializeComponent();
-            DataContext = new ViewModelTemplate();
         }
     }
 }

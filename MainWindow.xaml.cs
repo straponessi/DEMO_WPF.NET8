@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using DEMO_WPF.NET8.Views;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,9 +14,15 @@ namespace DEMO_WPF.NET8
 {
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(int s)
         {
             InitializeComponent();
+
+            if (s == 1)
+                MainFrame.Navigate(new AdminPage());
+            else
+                MainFrame.Navigate(new WorkerPage());
+
         }
     }
 }
